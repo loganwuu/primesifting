@@ -9,7 +9,7 @@
 A palindrome is any word, phrase, number, or other sequence of characters which reads the same backward or forward.
 
 ## Specs
-Use of the Sieve of Eratosthenes for the program:
+
 * 1 is not a prime number.
 * 2 is a prime number.
 * 3 is a prime number.
@@ -18,10 +18,13 @@ Use of the Sieve of Eratosthenes for the program:
 * Multiples of 2 are not prime numbers.
 * Multiples of 3 are not prime numbers.
 * Multiples of 5 are not prime numbers.
-* Create a list of numbers from 2 through n: 2, 3, 4, ..., number.
-* Starting from prime, remove all multiples of prime from the list.
-* Increment prime by 1.
-* When you reach the number, all the remaining numbers in the list are primes.
+
+Use of the Sieve of Eratosthenes for the program:
+* Create a list of numbers from 2 through n: 2, 3, 4, ..., ```number```.
+* Initially, let ```prime``` equal 2, the first prime number.
+* Starting from ```prime```, remove all multiples of ```prime``` from the list.
+* Increment ```prime``` by 1.
+* When reach the ```number```, all the remaining numbers in the list are primes.
 
 ## Setup
 
