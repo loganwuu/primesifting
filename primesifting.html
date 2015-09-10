@@ -5,27 +5,25 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <script src="js/jquery-1.11.3.js"></script>
         <script src="js/scripts.js"></script>
-        <title>Palindrome</title>
+        <title>Prime Sifting</title>
     </head>
     <body>
-
         <div class="container">
-            <h1>Palindrome</h1>
-            <form id="palindrome">
+            <h1>Prime Sifting<br>
+            <small>Find all Primes less than your number.</small>
+            </h1>
 
+            <form id="primesifting">
                 <div class="form-group">
-                    <label for="palindrome">Enter any word, phrase, number, or other sequence of characters:</label>
-                    <input type="text" id="input">
+                    <label for="primesifting">Enter a number:</label>
+                    <input type="number" id="num" min=0>
                 </div>
-                <button type="submit" class="btn">Find out!</button>
-
+                <button type="submit" class="btn btn-success">Find</button>
             </form>
 
             <div id="result">
-                <p><span class="input"></span> is <span class="not"></span> a palindrome.</p>
+                <h2><span class="answer"></span></h2>
             </div>
-
         </div>
-
     </body>
 </html>

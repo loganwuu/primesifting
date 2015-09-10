@@ -10,7 +10,8 @@ var primeSift = function(number) {
         primes = primeCalc(n, primes);
         n++;
     }
-        return primes;
+        var output = primes.join(', ');
+        return output;
 }
 
 var primeCalc = function(n, primes) {
@@ -37,7 +38,7 @@ $(document).ready(function() {
         var num = parseInt($("input#num").val());
         var result = primeSift(num);
 
-        $(".answer").text($result);
+        $(".answer").text(result);
         $("#result").show();
         event.preventDefault();
     });

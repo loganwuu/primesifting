@@ -1,23 +1,14 @@
 # Prime Sifting
 
-##### A web page that returns all of the prime numbers less than that number. (9/9/15)
+##### A web page that returns all of the prime numbers less than a number given by users. (9/9/15)
 
-#### By Logan Wu & Nathan Young
+#### By Logan Wu
 
 ## Description
 
 A palindrome is any word, phrase, number, or other sequence of characters which reads the same backward or forward.
 
 ## Specs
-
-* 1 is not a prime number.
-* 2 is a prime number.
-* 3 is a prime number.
-* 5 is a prime number.
-* 7 is a prime number...
-* Multiples of 2 are not prime numbers.
-* Multiples of 3 are not prime numbers.
-* Multiples of 5 are not prime numbers.
 
 Use of the Sieve of Eratosthenes for the program:
 * Create a list of numbers from 2 through n: 2, 3, 4, ..., ```number```.
@@ -36,7 +27,7 @@ HTML, CSS, JavaScript, jQuery, Mocha and Chai for testing
 
 ### Legal
 
-Copyright (c) 2015 **Logan Wu & Nathan Young**
+Copyright (c) 2015 **Logan Wu**
 
 This software is licensed under the MIT license.
 
