@@ -1,10 +1,13 @@
-describe('palindrome', function() {
-    it("returns true if the input reads the same forward as backward", function() {
-        expect(palindrome('mom')).to.equal(true);
+describe('primeSift', function() {
+    it("returns 'no prime number' if the number is less than 2", function() {
+        expect(primeSift(1)).to.eql('No prime numbers!');
     });
 
-    it("returns false if the input does not read the same forward as backward", function() {
-        expect(palindrome('hello')).to.equal(false);
+    it("returns 2 as first prime number", function() {
+        expect(primeSift(2)).to.eql([2]);
     });
 
+    it("returns prime numbers", function() {
+        expect(primeSift(10)).to.eql([2,3,5,7]);
+    });
 });

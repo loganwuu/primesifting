@@ -1,31 +1,44 @@
-var palindrome = function(input) {
-    var str = input.toLowerCase();
-    var array = str.split("");
-
-    var cloneArray = array.slice();
-    var reversedArray = cloneArray.reverse();
-
-    for (var i = 0, len = array.length; i < len; i++) {
-        if (array[i] !== reversedArray[i]) {
-            return false;
-        }
+var primeSift = function(number) {
+    if (number < 2) {
+        return "No prime numbers!";
     }
-    return true;
-};
+
+    var primes = [2];
+    var n = 3;
+
+    while (n < number) {
+        primes = primeCalc(n, primes);
+        n++;
+    }
+        return primes;
+}
+
+var primeCalc = function(n, primes) {
+    var number_passed = 0;
+    var new_primes = primes;
+    var index = 0;
+
+    while(index <= primes.length) {
+        if(n % primes[index] !== 0) {
+            number_passed++;
+            if((primes[index] === primes[primes.length - 1]) && (number_passed === primes.length)) {
+                new_primes.push(n);
+                return new_primes;
+            }
+        }
+        index++;
+    }
+    return new_primes;
+}
+
 
 $(document).ready(function() {
-  $("form#palindrome").submit(function(event) {
-    var input = $("input#input").val();
-    var result = palindrome(input);
+    $("form#primesifting").submit(function(event) {
+        var num = parseInt($("input#num").val());
+        var result = primeSift(num);
 
-    $(".input").text(input);
-    if (!result) {
-      $(".not").text("not");
-    } else {
-        $(".not").empty();
-    }
-
-    $("#result").show();
-    event.preventDefault();
-  });
+        $(".answer").text($result);
+        $("#result").show();
+        event.preventDefault();
+    });
 });
