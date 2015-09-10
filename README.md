@@ -10,7 +10,7 @@ A palindrome is any word, phrase, number, or other sequence of characters which 
 
 ## Specs
 
-Use of the Sieve of Eratosthenes for the program:
+Use of the Sieve of Eratosthenes for the algorithm:
 * Create a list of numbers from 2 through n: 2, 3, 4, ..., ```number```.
 * Initially, let ```prime``` equal 2, the first prime number.
 * Starting from ```prime```, remove all multiples of ```prime``` from the list.
