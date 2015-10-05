@@ -6,7 +6,7 @@
 
 ## Description
 
-A palindrome is any word, phrase, number, or other sequence of characters which reads the same backward or forward.
+A web page that returns all of the prime numbers less than a number given by users.
 
 ## Specs
 
